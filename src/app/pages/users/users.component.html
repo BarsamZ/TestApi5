@@ -1,0 +1,21 @@
+    
+    <!-- <input type="text" name="countryname" value="" id="streetname" #streetname>
+    <button (click)="street(streetname.value)" type="button" class="btn btn-dark"> Search Street</button>
+    <div class="spinner-grow text-dark" role="status">
+    <span class="visually-hidden" ></span>
+    </div> -->
+
+
+    <div *ngFor="let item of userslistiteam">
+
+        <label for="">    <b class="fix">{{item.id}}</b>  </label>
+        <label for="">  ({{item.name}}) </label>
+        <label for="">   ({{item.username}})  </label>    
+        
+        
+        <label for="">  {{item.email}} </label>
+
+       <label for="">  {{item.street}} </label>
+       <label for="">  {{item.zipcode}} </label>
+
+    </div>
